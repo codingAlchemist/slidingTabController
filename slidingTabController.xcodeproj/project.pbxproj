@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C7847FE1BC0AE0A0098415D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7847FD1BC0AE0A0098415D /* AppDelegate.swift */; };
-		9C7848001BC0AE0A0098415D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7847FF1BC0AE0A0098415D /* ViewController.swift */; };
+		9C7848001BC0AE0A0098415D /* SlidingTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7847FF1BC0AE0A0098415D /* SlidingTabViewController.swift */; };
 		9C7848031BC0AE0A0098415D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7848011BC0AE0A0098415D /* Main.storyboard */; };
 		9C7848051BC0AE0A0098415D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7848041BC0AE0A0098415D /* Assets.xcassets */; };
 		9C7848081BC0AE0A0098415D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7848061BC0AE0A0098415D /* LaunchScreen.storyboard */; };
@@ -17,6 +17,8 @@
 		9C78482D1BC0AE2B0098415D /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C78482C1BC0AE2B0098415D /* Tab.swift */; settings = {ASSET_TAGS = (); }; };
 		9C78482F1BC0AE3F0098415D /* ContentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C78482E1BC0AE3F0098415D /* ContentPage.swift */; settings = {ASSET_TAGS = (); }; };
 		9C7848311BC0B0540098415D /* TabGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7848301BC0B0540098415D /* TabGroup.swift */; settings = {ASSET_TAGS = (); }; };
+		9CA315FA1BCC242E00998A84 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA315F91BCC242E00998A84 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
+		9CA315FC1BCC24FD00998A84 /* SampleAppMainNavigationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA315FB1BCC24FD00998A84 /* SampleAppMainNavigationPage.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 /* Begin PBXFileReference section */
 		9C7847FA1BC0AE0A0098415D /* slidingTabController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = slidingTabController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7847FD1BC0AE0A0098415D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C7847FF1BC0AE0A0098415D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C7847FF1BC0AE0A0098415D /* SlidingTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingTabViewController.swift; sourceTree = "<group>"; };
 		9C7848021BC0AE0A0098415D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C7848041BC0AE0A0098415D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C7848071BC0AE0A0098415D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		9C78482C1BC0AE2B0098415D /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		9C78482E1BC0AE3F0098415D /* ContentPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentPage.swift; sourceTree = "<group>"; };
 		9C7848301BC0B0540098415D /* TabGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabGroup.swift; sourceTree = "<group>"; };
+		9CA315F91BCC242E00998A84 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9CA315FB1BCC24FD00998A84 /* SampleAppMainNavigationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SampleAppMainNavigationPage.swift; path = ../SampleAppMainNavigationPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +107,11 @@
 		9C7847FC1BC0AE0A0098415D /* slidingTabController */ = {
 			isa = PBXGroup;
 			children = (
-				9C78482B1BC0AE130098415D /* Views */,
+				9CA315FD1BCC2D8000998A84 /* FlexableHeader */,
+				9CA315F81BCC240F00998A84 /* Utils */,
+				9C78482B1BC0AE130098415D /* SlidingTabs */,
 				9C7847FD1BC0AE0A0098415D /* AppDelegate.swift */,
-				9C7847FF1BC0AE0A0098415D /* ViewController.swift */,
+				9CA315FB1BCC24FD00998A84 /* SampleAppMainNavigationPage.swift */,
 				9C7848011BC0AE0A0098415D /* Main.storyboard */,
 				9C7848041BC0AE0A0098415D /* Assets.xcassets */,
 				9C7848061BC0AE0A0098415D /* LaunchScreen.storyboard */,
@@ -132,14 +138,30 @@
 			path = slidingTabControllerUITests;
 			sourceTree = "<group>";
 		};
-		9C78482B1BC0AE130098415D /* Views */ = {
+		9C78482B1BC0AE130098415D /* SlidingTabs */ = {
 			isa = PBXGroup;
 			children = (
 				9C78482C1BC0AE2B0098415D /* Tab.swift */,
 				9C78482E1BC0AE3F0098415D /* ContentPage.swift */,
 				9C7848301BC0B0540098415D /* TabGroup.swift */,
+				9C7847FF1BC0AE0A0098415D /* SlidingTabViewController.swift */,
 			);
-			name = Views;
+			name = SlidingTabs;
+			sourceTree = "<group>";
+		};
+		9CA315F81BCC240F00998A84 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9CA315F91BCC242E00998A84 /* Constants.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		9CA315FD1BCC2D8000998A84 /* FlexableHeader */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FlexableHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,9 +297,11 @@
 			files = (
 				9C78482F1BC0AE3F0098415D /* ContentPage.swift in Sources */,
 				9C78482D1BC0AE2B0098415D /* Tab.swift in Sources */,
-				9C7848001BC0AE0A0098415D /* ViewController.swift in Sources */,
+				9C7848001BC0AE0A0098415D /* SlidingTabViewController.swift in Sources */,
 				9C7847FE1BC0AE0A0098415D /* AppDelegate.swift in Sources */,
 				9C7848311BC0B0540098415D /* TabGroup.swift in Sources */,
+				9CA315FA1BCC242E00998A84 /* Constants.swift in Sources */,
+				9CA315FC1BCC24FD00998A84 /* SampleAppMainNavigationPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

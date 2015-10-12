@@ -66,7 +66,6 @@ class TabGroup: UIView {
         let translation = slidingGesture.translationInView(self)
          UIView.animateWithDuration(0.1, animations: {
             let diff = self.center.x - self.tab.center.x
-            print("Diff \(diff)")
             self.tab.center = CGPointMake(self.lastLocationTouched.x + translation.x, self.tab.center.y)
             self.contentPage.center = CGPointMake(self.tab.center.x - diff, self.contentPage.center.y)
             for case let aTab as Tab in self.subviews{

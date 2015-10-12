@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UIScrollViewDelegate {
+class SlidingTabViewController: UIViewController {
     
     var slidingTabGroup = TabGroup()
     override func viewDidLoad() {
