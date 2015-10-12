@@ -8,6 +8,7 @@
 
 import UIKit
 class Tab: UIView {
+    var inCenter = Bool()
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -17,9 +18,12 @@ class Tab: UIView {
         self.backgroundColor = color;
         self.layer.borderColor = UIColor.blackColor().CGColor
         self.layer.borderWidth = 1;
-        
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("Must implement init")
+    }
+    
+    func getViewInCenter() -> UIView {
+        return self;
     }
 }
